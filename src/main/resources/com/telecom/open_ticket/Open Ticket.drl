@@ -27,7 +27,7 @@ no-loop
 		not( AlertEvent(
 			serverSerial == $serverSerial,
 			circuit == $circuit,
-			ncFunction == DELETE,
+			ncFunction == "DELETE",
 			this after [0s, 5s] $rectifierIsDown) )
 	then
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
