@@ -21,7 +21,7 @@ public class AlertEvent {
 	private String circuitClass;
 	private Long clearTime;
 	private Long collectionFirst;
-	private String Comments;
+	private String comments;
 	private String commonName;
 	private Long displayFirst;
 	private Long expireTime;
@@ -51,7 +51,7 @@ public class AlertEvent {
 	private Integer serviceNowErrorCode;
 	private Integer serviceNowState;
 	private String serviceNowStateName;
-	private Long ServiceNowSysId;
+	private Long serviceNowSysId;
 	private Integer severity;
 	private String severityName;
 	private Long stateCharge;
@@ -178,10 +178,10 @@ public class AlertEvent {
 		this.collectionFirst = collectionFirst;
 	}
 	public String getComments() {
-		return Comments;
+		return comments;
 	}
 	public void setComments(String comments) {
-		Comments = comments;
+		this.comments = comments;
 	}
 	public String getCommonName() {
 		return commonName;
@@ -358,10 +358,10 @@ public class AlertEvent {
 		this.serviceNowStateName = serviceNowStateName;
 	}
 	public Long getServiceNowSysId() {
-		return ServiceNowSysId;
+		return serviceNowSysId;
 	}
 	public void setServiceNowSysId(Long serviceNowSysId) {
-		ServiceNowSysId = serviceNowSysId;
+		this.serviceNowSysId = serviceNowSysId;
 	}
 	public Integer getSeverity() {
 		return severity;
