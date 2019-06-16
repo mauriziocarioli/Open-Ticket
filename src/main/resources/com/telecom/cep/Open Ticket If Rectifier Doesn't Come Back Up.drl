@@ -2,10 +2,12 @@ package com.telecom.open_ticket;
 
 import com.telecom.cep.AlertEvent;
 
+/*
 declare AlertEvent
 	@role(event)
 	@timestamp(_time)
 end
+*/
 
 global Long startTime;
 global Long startMemory;
