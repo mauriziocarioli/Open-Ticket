@@ -1,7 +1,8 @@
 package com.telecom.open_ticket;
 
+import com.telecom.cep.AlertEvent;
+
 declare AlertEvent
 	@role(event)
-	@expires(20s)
 	@timestamp(_time)
 end
