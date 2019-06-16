@@ -68,7 +68,8 @@ public class AlertEvent {
 	private String url;
 	private String _raw;
 	@org.kie.api.definition.type.Label("timestamp")
-	private String _time;
+	@org.kie.api.definition.type.Timestamp
+    private String _time;
 	private String eventId;
 	private String eventType;
 	private String host;
