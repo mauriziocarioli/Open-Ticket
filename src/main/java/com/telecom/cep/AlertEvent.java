@@ -5,6 +5,7 @@ package com.telecom.cep;
 
 @org.kie.api.definition.type.Label("Alert Event")
 @org.kie.api.definition.type.Role("event")
+@org.kie.api.definition.type.Timestamp("_time")
 public class AlertEvent {
 
 	private Long aId;
@@ -68,7 +69,6 @@ public class AlertEvent {
 	private String url;
 	private String _raw;
 	@org.kie.api.definition.type.Label("timestamp")
-	@org.kie.api.definition.type.Timestamp("_time")
     private String _time;
 	private String eventId;
 	private String eventType;
