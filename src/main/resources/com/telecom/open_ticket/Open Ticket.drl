@@ -6,3 +6,8 @@ declare AlertEvent
 	@role(event)
 	@timestamp(_time)
 end
+
+global Long startTime;
+global Long startMemory;
+global Long totalFactCount;
+global java.util.HashMap issuesMap; 
