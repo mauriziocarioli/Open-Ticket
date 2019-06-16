@@ -3,8 +3,10 @@
  */
 package com.telecom.cep;
 
+@org.kie.api.definition.type.Label("Alert Event")
+@org.kie.api.definition.type.Role("event")
 public class AlertEvent {
-	
+
 	private Long aId;
 	private Boolean aknowledged;
 	private String additionalInfo;
@@ -65,6 +67,7 @@ public class AlertEvent {
 	private String typeName;
 	private String url;
 	private String _raw;
+	@org.kie.api.definition.type.Label("timestamp")
 	private String _time;
 	private String eventId;
 	private String eventType;
@@ -80,7 +83,7 @@ public class AlertEvent {
 	private String splunkServerGroup;
 	private String tag;
 	private String tagEventType;
-	
+
 	public Long getaId() {
 		return aId;
 	}
@@ -529,6 +532,123 @@ public class AlertEvent {
 		return tagEventType;
 	}
 	public void setTagEventType(String tagEventType) {
+		this.tagEventType = tagEventType;
+	}
+	public AlertEvent() {
+	}
+	public AlertEvent(java.lang.Long aId, java.lang.Boolean aknowledged,
+			java.lang.String additionalInfo, java.lang.String agent,
+			java.lang.Long aggregationFirst, java.lang.String alertGroup,
+			java.lang.String alertKey, java.lang.String clliBuilding,
+			java.lang.String clliCity, java.lang.String clliDcode,
+			java.lang.String clliEntity, java.lang.String clliPro,
+			java.lang.String circuit, java.lang.String circuitClass,
+			java.lang.Long clearTime, java.lang.Long collectionFirst,
+			java.lang.String comments, java.lang.String commonName,
+			java.lang.Long displayFirst, java.lang.Long expireTime,
+			java.lang.Long firstOccurrence, java.lang.String identifier,
+			java.lang.Long lastOccurrence, java.lang.String location,
+			java.lang.Boolean maintenance, java.lang.String manager,
+			java.lang.Long masterSerial, java.lang.String neName,
+			java.lang.Integer noc, java.lang.Integer network,
+			java.lang.String networkName, java.lang.String nocName,
+			java.lang.String node, java.lang.String nodeAlias,
+			java.lang.Long oId, java.lang.String origSeverity,
+			java.lang.Long ownerGid, java.lang.String ownerGroup,
+			java.lang.String ownerName, java.lang.Long ownerUid,
+			java.lang.Long serial, java.lang.String serverName,
+			java.lang.Long serverSerial, java.lang.Integer serviceNowErrorCode,
+			java.lang.Integer serviceNowState,
+			java.lang.String serviceNowStateName,
+			java.lang.Long serviceNowSysId, java.lang.Integer severity,
+			java.lang.String severityName, java.lang.Long stateCharge,
+			java.lang.String summary, java.lang.String ttNumber,
+			java.lang.Integer tally, java.lang.String ticketLabel,
+			java.lang.Integer timeToDisplay, java.lang.String troubleTicket,
+			java.lang.Integer type, java.lang.String typeName,
+			java.lang.String url, java.lang.String _raw,
+			java.lang.String _time, java.lang.String eventId,
+			java.lang.String eventType, java.lang.String host,
+			java.lang.String index, java.lang.Integer lineCount,
+			java.lang.String ncFunction, java.lang.String ncSource,
+			java.lang.String punct, java.lang.String source,
+			java.lang.String sourceType, java.lang.String splunkServer,
+			java.lang.String splunkServerGroup, java.lang.String tag,
+			java.lang.String tagEventType) {
+		this.aId = aId;
+		this.aknowledged = aknowledged;
+		this.additionalInfo = additionalInfo;
+		this.agent = agent;
+		this.aggregationFirst = aggregationFirst;
+		this.alertGroup = alertGroup;
+		this.alertKey = alertKey;
+		this.clliBuilding = clliBuilding;
+		this.clliCity = clliCity;
+		this.clliDcode = clliDcode;
+		this.clliEntity = clliEntity;
+		this.clliPro = clliPro;
+		this.circuit = circuit;
+		this.circuitClass = circuitClass;
+		this.clearTime = clearTime;
+		this.collectionFirst = collectionFirst;
+		this.comments = comments;
+		this.commonName = commonName;
+		this.displayFirst = displayFirst;
+		this.expireTime = expireTime;
+		this.firstOccurrence = firstOccurrence;
+		this.identifier = identifier;
+		this.lastOccurrence = lastOccurrence;
+		this.location = location;
+		this.maintenance = maintenance;
+		this.manager = manager;
+		this.masterSerial = masterSerial;
+		this.neName = neName;
+		this.noc = noc;
+		this.network = network;
+		this.networkName = networkName;
+		this.nocName = nocName;
+		this.node = node;
+		this.nodeAlias = nodeAlias;
+		this.oId = oId;
+		this.origSeverity = origSeverity;
+		this.ownerGid = ownerGid;
+		this.ownerGroup = ownerGroup;
+		this.ownerName = ownerName;
+		this.ownerUid = ownerUid;
+		this.serial = serial;
+		this.serverName = serverName;
+		this.serverSerial = serverSerial;
+		this.serviceNowErrorCode = serviceNowErrorCode;
+		this.serviceNowState = serviceNowState;
+		this.serviceNowStateName = serviceNowStateName;
+		this.serviceNowSysId = serviceNowSysId;
+		this.severity = severity;
+		this.severityName = severityName;
+		this.stateCharge = stateCharge;
+		this.summary = summary;
+		this.ttNumber = ttNumber;
+		this.tally = tally;
+		this.ticketLabel = ticketLabel;
+		this.timeToDisplay = timeToDisplay;
+		this.troubleTicket = troubleTicket;
+		this.type = type;
+		this.typeName = typeName;
+		this.url = url;
+		this._raw = _raw;
+		this._time = _time;
+		this.eventId = eventId;
+		this.eventType = eventType;
+		this.host = host;
+		this.index = index;
+		this.lineCount = lineCount;
+		this.ncFunction = ncFunction;
+		this.ncSource = ncSource;
+		this.punct = punct;
+		this.source = source;
+		this.sourceType = sourceType;
+		this.splunkServer = splunkServer;
+		this.splunkServerGroup = splunkServerGroup;
+		this.tag = tag;
 		this.tagEventType = tagEventType;
 	}
 
