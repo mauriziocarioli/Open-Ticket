@@ -11,3 +11,11 @@ global Long startTime;
 global Long startMemory;
 global Long totalFactCount;
 global java.util.HashMap issuesMap; 
+
+rule "..."
+dialect "mvel"
+	when
+		AlertEvent()
+	then
+		System.out.println("ALERT!");
+end
