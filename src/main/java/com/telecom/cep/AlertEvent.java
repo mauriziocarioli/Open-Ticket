@@ -4,7 +4,7 @@
 package com.telecom.cep;
 
 @org.kie.api.definition.type.Label("Alert Event")
-@org.kie.api.definition.type.Role("event")
+@org.kie.api.definition.type.Role(org.kie.api.definition.type.Role.Type.FACT)
 @org.kie.api.definition.type.Timestamp("_time")
 public class AlertEvent {
 
