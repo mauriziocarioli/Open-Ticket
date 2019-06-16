@@ -12,10 +12,27 @@ global Long startMemory;
 global Long totalFactCount;
 global java.util.HashMap issuesMap; 
 
-rule "..."
+rule "Open Ticket If Rectifier Doesn't Come Back Back Up After 5 Minutes"
 dialect "mvel"
+no-loop
 	when
-		AlertEvent()
+		$rectifierIsDown = AlertEvent(
+			$time: _time,
+			$neName: neName, 
+			$serverSerial: serverSerial,
+			$summary: summary,
+			$circuit: circuit == "RECT-power",
+			severity == 4,
+			ncFunction == "INSERT")
+		not( AlertEvent(
+			serverSerial == $serverSerial,
+			circuit == $circuit,
+			ncFunction == DELETE,
+			this after [0s, 5s] $rectifierIsDown) )
 	then
-		System.out.println("ALERT!");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("Major alert at "+$neName);
+		System.out.println("Rectifier went down at "+$time);
+		System.out.println("Rectifier did not come back up after 5m");
+		System.out.println("Opened ticket");			
 end
