@@ -1,7 +1,5 @@
 package com.telecom.open_ticket;
 
-com.telecom.cep.AlertEvent( )package com.telecom.open_ticket;
-
 declare AlertEvent
 	@role(event)
 	@expires(20s)
