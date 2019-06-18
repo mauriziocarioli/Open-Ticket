@@ -3,8 +3,12 @@
  */
 package com.telecom.cep;
 
-@org.kie.api.definition.type.Role(org.kie.api.definition.type.Role.Type.FACT)
-@org.kie.api.definition.type.Timestamp("_time")
+import org.kie.api.definition.type.Role;
+import org.kie.api.definition.type.Role.Type;
+import org.kie.api.definition.type.Timestamp;
+
+@Role(Type.EVENT)
+@Timestamp("_time")
 public class AlertEvent {
 
 	private Long aId;
