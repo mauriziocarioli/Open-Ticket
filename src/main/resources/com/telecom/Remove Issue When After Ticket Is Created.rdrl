@@ -1,0 +1,9 @@
+package com.telecom;
+
+import java.lang.Number;
+
+rule "Remove Issue When After Ticket Is Created"
+	dialect "mvel"
+	when
+	then
+end
