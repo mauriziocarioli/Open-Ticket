@@ -38,7 +38,7 @@ public class Issues implements Serializable {
 		return this.lastIssueId;
 	}
 
-	public int getNewIssueId() {
+	public int newIssueId() {
 	    this.lastIssueId++;
 		return this.lastIssueId;
 	}
