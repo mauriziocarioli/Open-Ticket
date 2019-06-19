@@ -49,7 +49,7 @@ public class Issues implements Serializable {
 
 	public Issues(List<com.telecom.Issue> list, int newIssueId) {
 		this.list = list;
-		this.newIssueId = newIssueId;
+		this.lastIssueId = newIssueId;
 	}
 
 }
