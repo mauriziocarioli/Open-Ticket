@@ -13,7 +13,7 @@ public class Issues implements Serializable {
 
 	private List<Issue> list;
 
-	private int newIssueId;
+	private int lastIssueId;
 
 	public Issues() {
 	}
@@ -34,13 +34,17 @@ public class Issues implements Serializable {
 		list.remove(issue);
 	}
 
-	public int getNewIssueId() {
-	    this.newIssueId++;
-		return this.newIssueId;
+	public int getLastIssueId() {
+		return this.lastIssueId;
 	}
 
-	public void setNewIssueId(int newIssueId) {
-		this.newIssueId = newIssueId;
+	public int getNewIssueId() {
+	    this.lastIssueId++;
+		return this.lastIssueId;
+	}
+
+	public void setLastIssueId(int lastIssueId) {
+		this.lastIssueId = lastIssueId;
 	}
 
 	public Issues(List<com.telecom.Issue> list, int newIssueId) {
