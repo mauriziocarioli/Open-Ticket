@@ -10,21 +10,21 @@ public class Issue implements Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.Long serverSerialNumber;
+	private java.lang.Long serverSerial;
 
 	public Issue() {
 	}
 
-	public Long getServerSerialNumber() {
-		return this.serverSerialNumber;
+	public java.lang.Long getServerSerial() {
+		return this.serverSerial;
 	}
 
-	public void setServerSerialNumber(Long serverSerialNumber) {
-		this.serverSerialNumber = serverSerialNumber;
+	public void setServerSerial(java.lang.Long serverSerial) {
+		this.serverSerial = serverSerial;
 	}
 
-	public Issue(Long serverSerialNumber) {
-		this.serverSerialNumber = serverSerialNumber;
+	public Issue(java.lang.Long serverSerial) {
+		this.serverSerial = serverSerial;
 	}
 
 }
