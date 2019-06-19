@@ -24,7 +24,7 @@ public class Issues implements Serializable {
 		this.list = list;
 	}
 	
-	public void createNew(Issue issue) {
+	public void create(Issue issue) {
 	    list.add(issue);
 	}
 	
