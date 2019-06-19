@@ -6,12 +6,23 @@ package com.telecom;
 
 public class Issues implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Issues() {
-    }
+	private com.telecom.Issue list;
 
+	public Issues() {
+	}
 
+	public com.telecom.Issue getList() {
+		return this.list;
+	}
 
+	public void setList(com.telecom.Issue list) {
+		this.list = list;
+	}
+
+	public Issues(com.telecom.Issue list) {
+		this.list = list;
+	}
 
 }
