@@ -33,6 +33,10 @@ public class Issues implements Serializable {
 	public void setLastIssueId(Integer lastIssueId) {
 		this.lastIssueId = lastIssueId;
 	}
+	
+	public Integer newIssueId() {
+	    return lastIssueId++;
+	}
 
 	public Issues(List<Issue> list,
 			Integer lastIssueId) {
