@@ -1,0 +1,9 @@
+package com.telecom;
+
+import java.lang.Number;
+
+rule "Insert Issue"
+	dialect "mvel"
+	when
+	then
+end
