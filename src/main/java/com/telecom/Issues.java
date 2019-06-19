@@ -24,15 +24,13 @@ public class Issues implements Serializable {
 		this.list = list;
 	}
 	
-	public void create(Issue issue) {
-	    list.add(issue);
+	public void create(Integer issueId, Issue issue) {
+	    list.add(issueId, issue);
 	}
 	
-	public void delete(Integer issueId) {
-	    list.remove(issueId);
+	public void delete(Issue issue) {
+	    list.remove(issue);
 	}
-
-
 
 	public Issues(List<Issue> list) {
 		this.list = list;
