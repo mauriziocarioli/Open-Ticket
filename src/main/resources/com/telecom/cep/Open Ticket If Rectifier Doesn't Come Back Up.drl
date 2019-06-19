@@ -38,9 +38,9 @@ no-loop
 		not( Issue( serverSerial == $rectifierServerSerial ) from issues.list )
 	then
 	    message = 
-	    "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"+
-	    "@\n"+
-		"@ Major alert at "+$neName+"\n"+
+	    "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+	    "@\n" +
+		"@ Major alert at "+$neName+"\n" +
 		"@ Summary: "+$summary+"\n"+
 		"@ Rectifier with server serial "+$rectifierServerSerial+"\n"+
 		"@ went down at "+(new Date($t0)))+"\n"+
