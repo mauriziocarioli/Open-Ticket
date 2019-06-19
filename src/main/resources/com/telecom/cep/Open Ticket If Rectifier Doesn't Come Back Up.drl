@@ -33,7 +33,7 @@ no-loop
 			serverSerial == $rectifierServerSerial,
 			circuit == $circuit,
 			ncFunction == "DELETE",
-			this after [0s, 600s] $powerIsBackUp) )
+			this after [0s, 5s] $powerIsBackUp) )
 	then
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@");
@@ -43,7 +43,7 @@ no-loop
 		System.out.println("@ went down at "+(new Date($t0)));
 		System.out.println("@ AC Power with server serial "+$acServerSerial);
 		System.out.println("@ went back up at "+(new Date($t1)));
-		System.out.println("@ Rectifier did not come back up after 10m");
+		System.out.println("@ Rectifier did not come back up after 5s");
 		System.out.println("@ Opened ticket # SNN000000088773 at "+(new Date()));			
 		System.out.println("@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
