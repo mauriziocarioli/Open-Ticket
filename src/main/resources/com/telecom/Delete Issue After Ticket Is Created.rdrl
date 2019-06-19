@@ -2,7 +2,7 @@ package com.telecom;
 
 import java.lang.Number;
 
-rule "Remove Issue When After Ticket Is Created"
+rule "Delete Issue After Ticket Is Created"
 	dialect "mvel"
 	when
 		TicketCreated( $issueId : issueId)
