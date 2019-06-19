@@ -3,8 +3,6 @@
  */
 package com.telecom.cep;
 
-import java.io.Serializable;
-
 import org.kie.api.definition.type.Role;
 import org.kie.api.definition.type.Role.Type;
 import org.kie.api.definition.type.Timestamp;
