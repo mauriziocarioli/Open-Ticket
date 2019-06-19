@@ -11,7 +11,7 @@ import org.kie.api.definition.type.Timestamp;
 
 @Role(Type.EVENT)
 @Timestamp("_time")
-public class AlertEvent extends Serializable {
+public class AlertEvent {
 
 	private Long aId;
 	private Boolean aknowledged;
