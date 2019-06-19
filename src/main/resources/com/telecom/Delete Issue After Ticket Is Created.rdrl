@@ -9,4 +9,5 @@ rule "Delete Issue After Ticket Is Created"
 		$issue : Issue( issueId == $issueId ) from issues.list
 	then
 		issues.delete( $issue );
+		System.out.println(">>>>>>>> Issue # "+$issueId+" has been deleted.");
 end
