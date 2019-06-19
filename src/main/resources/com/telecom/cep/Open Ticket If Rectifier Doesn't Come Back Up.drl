@@ -37,7 +37,8 @@ no-loop
 			this after [0s, 5s] $powerIsBackUp) )
 		not( Issue( serverSerial == $rectifierServerSerial ) from issues.list )
 	then
-	    issues.list.add( new Issue( issues.newIssueId(), $rectifierServerSerial, $neName, $summary, $t0, $acServerSerial, $t1 ) );
+	    newIssueId++;
+	    issues.list.put( newIssueId, new Issue( newIssueId, $rectifierServerSerial, $neName, $summary, $t0, $acServerSerial, $t1 ) );
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@");
 		System.out.println("@ Major Alert at "+$neName);
