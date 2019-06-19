@@ -13,6 +13,8 @@ public class Issues implements Serializable {
 
 	private List<Issue> list;
 
+	private int newIssueId;
+
 	public Issues() {
 	}
 
@@ -23,17 +25,26 @@ public class Issues implements Serializable {
 	public void setList(List<Issue> list) {
 		this.list = list;
 	}
-	
+
 	public void create(Integer issueId, Issue issue) {
-	    list.add(issueId, issue);
-	}
-	
-	public void delete(Issue issue) {
-	    list.remove(issue);
+		list.add(issueId, issue);
 	}
 
-	public Issues(List<Issue> list) {
+	public void delete(Issue issue) {
+		list.remove(issue);
+	}
+
+	public int getNewIssueId() {
+		return this.newIssueId;
+	}
+
+	public void setNewIssueId(int newIssueId) {
+		this.newIssueId = newIssueId;
+	}
+
+	public Issues(java.util.List<com.telecom.Issue> list, int newIssueId) {
 		this.list = list;
+		this.newIssueId = newIssueId;
 	}
 
 }
