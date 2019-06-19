@@ -23,6 +23,12 @@ public class Issues implements Serializable {
 	public void setList(HashMap<Integer,Issue> list) {
 		this.list = list;
 	}
+	
+	public void removeIssue(Integer issueId) {
+	    list.remove(issueId);
+	}
+
+
 
 	public Issues(HashMap<Integer,Issue> list) {
 		this.list = list;
