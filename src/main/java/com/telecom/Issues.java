@@ -24,14 +24,6 @@ public class Issues implements Serializable {
 		this.list = list;
 	}
 
-	public Integer getLastIssueId() {
-		return this.lastIssueId;
-	}
-
-	public void setLastIssueId(Integer lastIssueId) {
-		this.lastIssueId = lastIssueId;
-	}
-	
 	public void removeIssue(Integer issueId) {
 	    list.remove(issueId);
 	}
