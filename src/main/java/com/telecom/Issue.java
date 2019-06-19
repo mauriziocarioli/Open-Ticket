@@ -9,6 +9,8 @@ import java.io.Serializable;
 public class Issue implements Serializable {
 
 	static final long serialVersionUID = 1L;
+	
+	private Integer issueId;
 
 	private Long serverSerial;
 
@@ -23,6 +25,14 @@ public class Issue implements Serializable {
 	private Long timeAcBackUp;
 
 	public Issue() {
+	}
+	
+	public Integer getIssueId() {
+	    return this.issueId;
+	}
+	
+	public void setIssueId(Integer issueId) {
+	    this.issueId = issueId;
 	}
 
 	public Long getServerSerial() {
@@ -73,9 +83,10 @@ public class Issue implements Serializable {
 		this.timeAcBackUp = timeAcBackUp;
 	}
 
-	public Issue(Long serverSerial, String neName,
+	public Issue(Integer issueId, Long serverSerial, String neName,
 			String summary, Long timeOfIncident,
 			Long acServerSerial, Long timeAcBackUp) {
+	    this.issueId = issueId;
 		this.serverSerial = serverSerial;
 		this.neName = neName;
 		this.summary = summary;
