@@ -38,7 +38,7 @@ no-loop
 		not( Issue( serverSerial == $rectifierServerSerial ) from issues.list )
 	then
 	    newIssueId++;
-	    issues.createNew( newIssueId, new Issue( newIssueId, $rectifierServerSerial, $neName, $summary, $t0, $acServerSerial, $t1 ) );
+	    issues.create( newIssueId, new Issue( newIssueId, $rectifierServerSerial, $neName, $summary, $t0, $acServerSerial, $t1 ) );
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@");
 		System.out.println("@ Major Alert at "+$neName);
