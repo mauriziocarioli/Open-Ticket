@@ -16,15 +16,15 @@ public class Issues implements Serializable {
 	public Issues() {
 	}
 
-	public Issue getList() {
+	public HashMap<Integer,Issue> getList() {
 		return this.list;
 	}
 
-	public void setList(Issue list) {
+	public void setList(HashMap<Integer,Issue> list) {
 		this.list = list;
 	}
 
-	public Issues(Issue list) {
+	public Issues(HashMap<Integer,Issue> list) {
 		this.list = list;
 	}
 
