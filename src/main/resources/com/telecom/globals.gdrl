@@ -1,4 +1,4 @@
 package com.telecom;
 
 global com.telecom.Issues issues;
-global java.lang.String message;
+global java.lang.Long issueId;
