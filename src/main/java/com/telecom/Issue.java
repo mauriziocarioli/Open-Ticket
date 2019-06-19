@@ -19,7 +19,7 @@ public class Issue implements Serializable {
 		return this.serverSerialNumber;
 	}
 
-	public void setServerSerialNumber(java.lang.Long serverSerialNumber) {
+	public void setServerSerialNumber(Long serverSerialNumber) {
 		this.serverSerialNumber = serverSerialNumber;
 	}
 
