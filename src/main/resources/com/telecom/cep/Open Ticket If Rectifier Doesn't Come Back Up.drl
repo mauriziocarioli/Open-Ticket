@@ -37,8 +37,7 @@ no-loop
 			this after [0s, 5s] $powerIsBackUp) )
 		not( Issue( serverSerial == $rectifierServerSerial ) from issues.list )
 	then
-	    message = 
-	    "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n";
+	    message = "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n";
 	    issues.list.add( new Issue( $rectifierServerSerial, message ) );
 		System.out.println(message);
 end
