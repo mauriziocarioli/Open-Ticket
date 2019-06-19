@@ -35,6 +35,7 @@ no-loop
 			ncFunction == "DELETE",
 			this after [0s, 5s] $powerIsBackUp) )
 	then
+	    insert( new Issue($rectifierServerSerial) );
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@");
 		System.out.println("@ Major alert at "+$neName);
