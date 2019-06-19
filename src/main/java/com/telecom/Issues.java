@@ -10,7 +10,7 @@ public class Issues implements Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private Issue list;
+	private HashMap<Integer,Issue> list;
 
 	public Issues() {
 	}
