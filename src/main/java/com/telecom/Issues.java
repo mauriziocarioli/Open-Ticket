@@ -11,9 +11,7 @@ public class Issues implements Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private List<Issue> list;
-
-	private Integer lastIssueId;
+	private HashMap<Integer, Issue> list;
 
 	public Issues() {
 	}
@@ -34,18 +32,12 @@ public class Issues implements Serializable {
 		this.lastIssueId = lastIssueId;
 	}
 	
-	public Integer newIssueId() {
-	    return lastIssueId++;
-	}
-	
 	public void removeIssue(Integer issueId) {
 	    list.remove(issueId);
 	}
 
-	public Issues(List<Issue> list,
-			Integer lastIssueId) {
+	public Issues(HashMap<Integer, Issue> list) {
 		this.list = list;
-		this.lastIssueId = lastIssueId;
 	}
 
 }
