@@ -6,4 +6,5 @@ rule "Insert Issue"
 	dialect "mvel"
 	when
 	then
+		insert( new Issue() );
 end
