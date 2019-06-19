@@ -35,9 +35,9 @@ no-loop
 			circuit == $circuit,
 			ncFunction == "DELETE",
 			this after [0s, 5s] $powerIsBackUp) )
-		not( Issue() )
+		not( Issue( serverSerial == $rectifierServerSerial ) )
 	then
-	    insert( new Issue($rectifierServerSerial) );
+	    insert( new Issue( $rectifierServerSerial ) );
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@");
 		System.out.println("@ Major alert at "+$neName);
