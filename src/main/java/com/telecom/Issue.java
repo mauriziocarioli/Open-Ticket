@@ -13,7 +13,7 @@ public class Issue implements java.io.Serializable {
 	public Issue() {
 	}
 
-	public java.lang.Long getServerSerialNumber() {
+	public Long getServerSerialNumber() {
 		return this.serverSerialNumber;
 	}
 
@@ -21,7 +21,7 @@ public class Issue implements java.io.Serializable {
 		this.serverSerialNumber = serverSerialNumber;
 	}
 
-	public Issue(java.lang.Long serverSerialNumber) {
+	public Issue(Long serverSerialNumber) {
 		this.serverSerialNumber = serverSerialNumber;
 	}
 
