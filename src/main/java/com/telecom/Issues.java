@@ -11,20 +11,20 @@ public class Issues implements Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private com.telecom.Issue list;
+	private Issue list;
 
 	public Issues() {
 	}
 
-	public com.telecom.Issue getList() {
+	public Issue getList() {
 		return this.list;
 	}
 
-	public void setList(com.telecom.Issue list) {
+	public void setList(Issue list) {
 		this.list = list;
 	}
 
-	public Issues(com.telecom.Issue list) {
+	public Issues(Issue list) {
 		this.list = list;
 	}
 
