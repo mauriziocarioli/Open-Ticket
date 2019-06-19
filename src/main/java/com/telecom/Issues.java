@@ -32,6 +32,7 @@ public class Issues implements Serializable {
 
 	public void delete(Issue issue) {
 		list.remove(issue);
+		this.lastIssueId--;
 	}
 
 	public int getLastIssueId() {
