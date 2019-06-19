@@ -12,7 +12,15 @@ public class Issue implements Serializable {
 
 	private Long serverSerial;
 
-	private java.lang.String message;
+	private String neName;
+
+	private String summary;
+
+	private Long timeOfIncident;
+
+	private Long acServerSerial;
+
+	private Long timeAcBackUp;
 
 	public Issue() {
 	}
@@ -25,17 +33,55 @@ public class Issue implements Serializable {
 		this.serverSerial = serverSerial;
 	}
 
-	public java.lang.String getMessage() {
-		return this.message;
+	public java.lang.String getNeName() {
+		return this.neName;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
+	public void setNeName(String neName) {
+		this.neName = neName;
 	}
 
-	public Issue(java.lang.Long serverSerial, String message) {
+	public String getSummary() {
+		return this.summary;
+	}
+
+	public void setSummary(String summary) {
+		this.summary = summary;
+	}
+
+	public java.lang.Long getTimeOfIncident() {
+		return this.timeOfIncident;
+	}
+
+	public void setTimeOfIncident(Long timeOfIncident) {
+		this.timeOfIncident = timeOfIncident;
+	}
+
+	public java.lang.Long getAcServerSerial() {
+		return this.acServerSerial;
+	}
+
+	public void setAcServerSerial(Long acServerSerial) {
+		this.acServerSerial = acServerSerial;
+	}
+
+	public Long getTimeAcBackUp() {
+		return this.timeAcBackUp;
+	}
+
+	public void setTimeAcBackUp(Long timeAcBackUp) {
+		this.timeAcBackUp = timeAcBackUp;
+	}
+
+	public Issue(Long serverSerial, String neName,
+			String summary, Long timeOfIncident,
+			Long acServerSerial, Long timeAcBackUp) {
 		this.serverSerial = serverSerial;
-		this.message = message;
+		this.neName = neName;
+		this.summary = summary;
+		this.timeOfIncident = timeOfIncident;
+		this.acServerSerial = acServerSerial;
+		this.timeAcBackUp = timeAcBackUp;
 	}
 
 }
