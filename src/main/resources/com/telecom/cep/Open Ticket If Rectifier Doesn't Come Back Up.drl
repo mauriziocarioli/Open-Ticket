@@ -37,17 +37,19 @@ no-loop
 			this after [0s, 5s] $powerIsBackUp) )
 		not( Issue( serverSerial == $rectifierServerSerial ) from issues.list )
 	then
-	    issues.list.add( new Issue( $rectifierServerSerial ) );
-		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-		System.out.println("@");
-		System.out.println("@ Major alert at "+$neName);
-		System.out.println("@ Summary: "+$summary);
-		System.out.println("@ Rectifier with server serial "+$rectifierServerSerial);
-		System.out.println("@ went down at "+(new Date($t0)));
-		System.out.println("@ AC Power with server serial "+$acServerSerial);
-		System.out.println("@ went back up at "+(new Date($t1)));
-		System.out.println("@ Rectifier did not come back up after 5s");
-		System.out.println("@ Opened ticket # SNN000000088773 at "+(new Date()));			
-		System.out.println("@");
-		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+	    message = 
+	    "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"+
+	    "@\n"+
+		"@ Major alert at "+$neName+"\n"+
+		"@ Summary: "+$summary+"\n"+
+		"@ Rectifier with server serial "+$rectifierServerSerial+"\n"+
+		"@ went down at "+(new Date($t0)))+"\n"+
+		"@ AC Power with server serial "+$acServerSerial+"\n"+
+		"@ went back up at "+(new Date($t1)))+"\n"+
+		"@ Rectifier did not come back up after 5s"+"\n"+
+		"@ Opened ticket # SNN000000088773 at "+(new Date()))+"\n"+			
+		"@"+"\n"+
+		"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@";
+	    issues.list.add( new Issue( $rectifierServerSerial, message ) );
+		System.out.println(message);
 end
