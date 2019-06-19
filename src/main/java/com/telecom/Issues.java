@@ -26,8 +26,8 @@ public class Issues implements Serializable {
 		this.list = list;
 	}
 
-	public void create(Integer issueId, Issue issue) {
-		list.add(issueId, issue);
+	public void create(Issue issue) {
+		list.add(issue.getIssueId(), issue);
 	}
 
 	public void delete(Issue issue) {
@@ -43,8 +43,9 @@ public class Issues implements Serializable {
 		this.newIssueId = newIssueId;
 	}
 
-	public Issues(java.util.List<com.telecom.Issue> list) {
+	public Issues(List<com.telecom.Issue> list, int newIssueId) {
 		this.list = list;
+		this.newIssueId = newIssueId;
 	}
 
 }
