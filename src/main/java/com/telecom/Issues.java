@@ -25,7 +25,7 @@ public class Issues implements Serializable {
 	}
 	
 	public void createNew(Integer issueId, Issue issue) {
-	    List i = list.put(issueId, issue);
+	    Issue i = list.put(issueId, issue);
 	}
 	
 	public void delete(Integer issueId) {
