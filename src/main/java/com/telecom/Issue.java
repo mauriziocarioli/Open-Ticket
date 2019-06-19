@@ -12,6 +12,8 @@ public class Issue implements Serializable {
 
 	private Long serverSerial;
 
+	private java.lang.String message;
+
 	public Issue() {
 	}
 
@@ -23,8 +25,17 @@ public class Issue implements Serializable {
 		this.serverSerial = serverSerial;
 	}
 
-	public Issue(Long serverSerial) {
+	public java.lang.String getMessage() {
+		return this.message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public Issue(java.lang.Long serverSerial, String message) {
 		this.serverSerial = serverSerial;
+		this.message = message;
 	}
 
 }
