@@ -3,13 +3,15 @@
  */
 package com.telecom.cep;
 
+import java.io.Serializable;
+
 import org.kie.api.definition.type.Role;
 import org.kie.api.definition.type.Role.Type;
 import org.kie.api.definition.type.Timestamp;
 
 @Role(Type.EVENT)
 @Timestamp("_time")
-public class AlertEvent {
+public class AlertEvent extends Serializable {
 
 	private Long aId;
 	private Boolean aknowledged;
