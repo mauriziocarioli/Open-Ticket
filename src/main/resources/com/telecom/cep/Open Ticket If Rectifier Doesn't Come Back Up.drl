@@ -10,7 +10,6 @@ declare AlertEvent
 	@timestamp(_time)
 end
 
-
 rule "Open Ticket If Rectifier Doesn't Come Back Up After 5 Minutes"
 dialect "mvel"
 no-loop
