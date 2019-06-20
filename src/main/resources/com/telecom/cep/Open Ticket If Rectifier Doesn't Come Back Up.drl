@@ -44,6 +44,4 @@ no-loop
 		System.out.println("@ Issue "+issues.getLastIssueId()+" Created");
 		System.out.println("@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-	    retract $rectifierIsDown;
-	    retract $powerIsBackUp;
 end
