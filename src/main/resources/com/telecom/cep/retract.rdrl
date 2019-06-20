@@ -1,0 +1,9 @@
+package com.telecom.cep;
+
+import java.lang.Number;
+
+rule "retract"
+	dialect "mvel"
+	when
+	then
+end
