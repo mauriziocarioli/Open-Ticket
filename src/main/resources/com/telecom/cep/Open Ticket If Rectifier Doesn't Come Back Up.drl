@@ -4,7 +4,6 @@ import java.util.Date;
 import com.telecom.Issue;
 import com.telecom.cep.AlertEvent;
 
-
 declare AlertEvent
 	@role(event)
 	@timestamp(_time)
