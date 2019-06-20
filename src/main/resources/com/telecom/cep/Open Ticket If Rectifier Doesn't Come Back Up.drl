@@ -7,10 +7,10 @@ import com.telecom.cep.AlertEvent;
 declare AlertEvent
 	@role( event )
 	@timestamp( _time )
-	@expire( 1h )
+	@expire( 60s )
 end
 
-rule "Open Ticket If Rectifier Doesn't Come Back Up After 5 Minutes"
+rule "Open Ticket If Rectifier Doesn't Come Back Up"
 dialect "mvel"
 no-loop
 	when
