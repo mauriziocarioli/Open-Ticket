@@ -5,8 +5,9 @@ import com.telecom.Issue;
 import com.telecom.cep.AlertEvent;
 
 declare AlertEvent
-	@role(event)
-	@timestamp(_time)
+	@role( event )
+	@timestamp( _time )
+	@expire( 1d )
 end
 
 rule "Open Ticket If Rectifier Doesn't Come Back Up After 5 Minutes"
