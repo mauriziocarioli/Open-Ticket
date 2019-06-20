@@ -36,6 +36,8 @@ no-loop
 			this after [0s, 1s] $powerIsBackUp) )
 		not( Issue( serverSerial == $rectifierServerSerial ) from issues.list)
 	then
+	    retract $rectifierIsDown;
+	    retract $powerIsBackUp;
 	    issues.create( new Issue( issues.newIssueId(), $rectifierServerSerial, $neName, $summary, $t0, $acServerSerial, $t1 ) );
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		System.out.println("@");
