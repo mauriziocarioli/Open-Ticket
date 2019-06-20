@@ -7,7 +7,7 @@ import com.telecom.cep.AlertEvent;
 declare AlertEvent
 	@role( event )
 	@timestamp( _time )
-	@expire( 60s )
+	@expire( 1d )
 end
 
 rule "Open Ticket If Rectifier Doesn't Come Back Up"
@@ -33,7 +33,7 @@ no-loop
 			serverSerial == $rectifierServerSerial,
 			circuit == $circuit,
 			ncFunction == "DELETE",
-			this after [0s, 1s] $powerIsBackUp) )
+			this after [0s, 1h] $powerIsBackUp) )
 		not( Issue( serverSerial == $rectifierServerSerial ) from issues.list)
 	then
 	    issues.create( new Issue( issues.newIssueId(), $rectifierServerSerial, $neName, $summary, $t0, $acServerSerial, $t1 ) );
