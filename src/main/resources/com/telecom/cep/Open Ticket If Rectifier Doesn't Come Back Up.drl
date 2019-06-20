@@ -34,8 +34,7 @@ no-loop
 			serverSerial == $rectifierServerSerial,
 			circuit == $circuit,
 			ncFunction == "DELETE",
-			this after [0s, 120s] $powerIsBackUp) )
-		not( Issue( serverSerial == $rectifierServerSerial ) from issues.list)
+			this after [0s, 600s] $powerIsBackUp) )
 	then
 	    issues.create( new Issue( issues.newIssueId(), $rectifierServerSerial, $neName, $summary, $t0, $acServerSerial, $t1 ) );
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
