@@ -5,12 +5,12 @@ package com.telecom.cep;
 
 import org.kie.api.definition.type.Role;
 import org.kie.api.definition.type.Role.Type;
-import org.kie.api.definition.type.Timestamp;
+//import org.kie.api.definition.type.Timestamp;
 import org.kie.api.definition.type.Expires;
 
 @Role(Type.EVENT)
 @Expires("1d")
-@Timestamp("_time")
+//@Timestamp("_time")
 public class AlertEvent {
 
 	private Long aId;
