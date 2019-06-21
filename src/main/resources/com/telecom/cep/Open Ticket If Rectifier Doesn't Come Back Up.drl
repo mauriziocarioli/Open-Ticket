@@ -39,7 +39,7 @@ no-loop
 		System.out.println("@");
 		System.out.println("@ Major Alert at "+$neName);
 		System.out.println("@");
-		System.out.println("@ Issue "+issues.getLastIssueId()+" Created");
+		System.out.println("@ Issue # "+issues.getLastIssueId()+" Created");
 		System.out.println("@");
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 	    retract( $rectifierIsDown );
