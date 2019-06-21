@@ -3,11 +3,6 @@ package com.telecom.open_ticket;
 import com.telecom.Issue;
 import com.telecom.cep.AlertEvent;
 
-declare AlertEvent
-	@role( event )
-	@expire( 1d )
-end
-
 rule "Open Ticket If Rectifier Doesn't Come Back Up"
 dialect "mvel"
 no-loop
