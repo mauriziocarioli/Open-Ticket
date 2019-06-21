@@ -6,7 +6,6 @@ import com.telecom.cep.AlertEvent;
 
 declare AlertEvent
 	@role( event )
-	@timestamp( _time )
 	@expire( 1d )
 end
 
