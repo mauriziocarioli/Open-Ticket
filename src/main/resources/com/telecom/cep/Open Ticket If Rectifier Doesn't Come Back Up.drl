@@ -1,6 +1,5 @@
 package com.telecom.open_ticket;
 
-import java.util.Date;
 import com.telecom.Issue;
 import com.telecom.cep.AlertEvent;
 
