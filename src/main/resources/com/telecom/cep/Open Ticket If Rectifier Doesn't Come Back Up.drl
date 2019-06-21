@@ -33,7 +33,7 @@ no-loop
 			serverSerial == $rectifierServerSerial,
 			circuit == $circuit,
 			ncFunction == "DELETE",
-			this after [0s, 1h] $powerIsBackUp) )
+			this after [0s, 3600s] $powerIsBackUp) )
 		not( Issue( serverSerial == $rectifierServerSerial ) from issues.list)
 	then
 	    issues.create( new Issue( issues.newIssueId(), $rectifierServerSerial, $neName, $summary, $t0, $acServerSerial, $t1 ) );
