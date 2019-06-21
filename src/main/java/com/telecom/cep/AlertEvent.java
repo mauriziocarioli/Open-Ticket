@@ -6,8 +6,10 @@ package com.telecom.cep;
 import org.kie.api.definition.type.Role;
 import org.kie.api.definition.type.Role.Type;
 import org.kie.api.definition.type.Timestamp;
+import org.kie.api.definition.type.Expire;
 
 @Role(Type.EVENT)
+@Expire("1d")
 @Timestamp("_time")
 public class AlertEvent {
 
